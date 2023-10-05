@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap");
+
+* {
+  margin: 0px;
+  width: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 11fr 2fr;
+}
+
+/* Sidebar section */
+#sidebar {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+}
+
+#dashboard {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    180deg,
+    #222222 0%,
+    #1f1f1f 11.64%,
+    #171717 25.66%,
+    #161616 32.94%,
+    #151515 35.98%,
+    #131313 44.89%,
+    #121212 55.22%,
+    #121212 75.34%,
+    #121212 85.45%,
+    rgba(18, 18, 18, 1) 100%
+  );
+  background-size: cover;
+}
+
+.player {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  grid-column: 1/-1;
+  border-width: 0px, 0px, 0px, 0px;
+
+  border-style: solid;
+
+  border-color: #282828;
+  display: grid;
+  grid-template-columns: 1f;
+  grid-template-rows: 4fr 1fr;
+}
+
+#plr {
+  width: 100%;
+  height: 100%;
+  background-color: #181818;
+  border-width: 0px 0px 0px 0px;
+  border-style: solid;
+  border-color: #282828;
+}
+
+#plr-info {
+  width: 100%;
+  height: 100%;
+  background-color: #1ed760;
+}
+
+.side1 {
+  width: 150.58px;
+  height: 60.53px;
+  margin-left: 22px;
+}
+
+.side2 {
+  width: 225.1px;
+  height: 100.46px;
+  border-radius: 6px;
+  /* background-color: orange; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* align-items: space-between; */
+  gap: 2px;
+}
+
+.side2-i1s:hover {
+  background-color: #282828;
+  cursor: pointer;
+}
+.side2-i1 {
+  /* background-color: black; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  padding-left: 10px;
+  gap: 10px;
+
+  font-family: DM Sans;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.06em;
+  text-align: left;
+  color: #fff;
+  border-radius: 6px;
+  /* margin-top: 5px; */
+}
+
+.side2-i1 > img {
+  width: 15.65px;
+  height: 32.12px;
+}
+
+.side3 {
+  width: 225.1px;
+  height: 100.46px;
+  /* background-color: aqua; */
+  margin-top: 6px;
+}
+
+.side4 {
+  width: 225.1px;
+  height: 180px;
+  /* background-color: aqua; */
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px;
+
+  font-family: DM Sans;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.0825em;
+  text-align: left;
+  color: #fff;
+}
+
+.side5{
+    width: 225.1px;
+    display: flex;
+    /* justify-content: space-between; */
+    margin-left: 10px;
+    color: #fff;
+    align-items: center;
+    flex-wrap: wrap;
+
+    font-family: DM Sans;
+font-size: 10px;
+font-weight: 700;
+line-height: 25px;
+letter-spacing: -0.0525em;
+text-align: left;
+
+}
+
+.side5 > img {
+    width: 15.65px;
+    height: 32.12px;
+  }
+  
+.side5>p{
+    width: auto;
+    margin-left: 15px;
+}
+
+/* Dashboard section */
+.dash1{
+    width: 100%;
+    height: 40px;
+    background-color: #121212;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+}
+
+.dash1>img{
+    width: 50px;
+height: 20px;
+}
+
+.dash1-proimg{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 10px;
+    padding: 5px;
+
+    font-family: DM Sans;
+font-size: 13px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: -0.02em;
+text-align: left;
+color: #fff;
+}
+
+.dash1-proimg>img{
+    width: 18px;
+height: 18px;
+}
+
+.dash2{
+    width: 100%;
+    padding-inline: 20px;
+}
+
+.dash2>h1{
+    width: 100%;
+    font-family: DM Sans;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: -0.03em;
+    text-align: left;
+color: #fff;    
+}
+
+.dash21{
+    width: 100%;
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    /* background-color: yellow; */
+    padding: 20px;
+    gap: 10px;
+}
+
+.ditem1{
+    width: 340px;
+    height: 50px;
+    background-color: #303030;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+.ditem1>img{
+    width: 50px;
+    height: 50px;
+}
+
+.ditem1>p{
+    width: 200px;
+
+    margin: 15px;
+    font-family: DM Sans;
+font-size: 15px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: -0.02em;
+text-align: left;
+color: #fff;
+/* background-color: blue; */
+}
+
+.dash3{
+    width: 100%;
+    /* background-color: white; */
+}
+
+.dash3-t{
+    width: 100%;
+    height: 30px;
+    display: flex;
+/* background-color: green; */
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+margin-top: 10px;
+}
+
+.dash3-t>p{
+    width: auto;
+}
+
+.dasht1{
+    font-family: DM Sans;
+font-size: 20px;
+font-weight: 700;
+line-height: 38px;
+letter-spacing: -0.04em;
+text-align: left;
+color: #fff;
+}
+
+.dasht2{
+    font-family: DM Sans;
+font-size: 13px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0.04em;
+text-align: left;
+color: #B3B3B3;
+}
+
+.main-dash3{
+    width: 90%;
+    /* margin-left: 20px; */
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(auto,300px);
+    /* background-color: orangered; */
+    padding: 20px;
+    gap: 10px;
+    overflow-y: scroll;
+
+}
+
+.main-dash3-i{
+    width: 170px;
+    height: 200px;
+    background-color: #181818;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding-top: 2px;
+}
+
+.main-dash3-i>img{
+    width: 150px;
+}
+
+.mp1{
+ width: 150px;
+ font-family: DM Sans;
+ font-size: 12px;
+ font-weight: 500;
+ line-height: 27px;
+ letter-spacing: 0.09em;
+ text-align: left;
+color: #fff; 
+}
+
+.mp2{
+    width: 150px;
+
+font-family: DM Sans;
+font-size: 10px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0.01em;
+text-align: left;
+color: #fff;
+}
+
+.player{
+    width: 100%;
+    position: sticky;
+    bottom: 0px;
+z-index: 100;
+}
+
+#plr{
+    width: 100y;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plr1{
+    width: 200px;
+}
+
+.plr2{
+    width: 400px;
+}
+
+.plr3{
+    width: 200px;
+}
+
+#plr-infor{
+    display: flex;
+
+}
+
+.main-dash3::-webkit-scrollbar {
+    display: none;
+}   
